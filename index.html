@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title> Leaderboard </title>
+</head>
+<body>
+  <main>
+    <div class="container heading">
+      <h3 class="text-4xl ml-5 mt-5">Leaderboard</h3>
+    </div>
+    <section class="flex flex-wrap">
+      <div class="display-scores w-1/2 p-4">
+        <div class="flex ml-5 mt-5">
+          <h3 class="text-2xl"> Recent Scores </h3>
+          <button class="border border-black ml-3 py-1 px-1 rounded-lg shadow-2xl shadow-black"> Refresh </button>
+        </div>
+        <table class="table-striped ml-5 mt-5 w-3/4 border border-black">
+          <tbody>
+            <tr> <td class="p-4">Name: 100 </td> </tr>
+            <tr class="bg-gray-200"> <td class="p-4">Name: 20 </td> </tr>
+            <tr><td class="p-4">Name: 120 </td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="add-score w-1/2 p-4">
+        <div class="m-5">
+          <h3 class="text-2xl">Add your score</h3>
+        </div>
+        <form class="m-5" action="" method="post">
+          <div>
+            <input class="w-1/2 border border-black py-2 px-3 rounded-lg placeholder-black" type="text" id="name" placeholder="Your Name">
+          </div>
+          <div>
+            <input class="mt-3 w-1/2 border border-black py-2 px-3 rounded-lg placeholder-black" type="text" id="score" placeholder="Your Score">
+          </div>
+          <div class="w-1/2">
+            <button class="float-right mt-3 py-1 px-1 border border-black rounded-lg" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
